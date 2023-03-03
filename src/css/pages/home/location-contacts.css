@@ -1,0 +1,124 @@
+.home-location {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.home-location h2 {
+    margin-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+.map {
+    width: 100%;
+    height: 300px;
+    filter: grayscale();
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+.list-gap--location {
+    flex-direction: column;
+    margin-top: 32px;
+}
+.home-location li:first-child {
+    max-width: 214px;
+
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+.home-location li:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+.home-location p {
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.home-location .list .home-location-address__item:not(:last-child) {
+    margin-bottom: 4px;
+}
+.home-location-address__item {
+    font-size: 14px;
+    line-height: 1.33;
+ }
+
+@media screen and (min-width: 375px) {
+    .map {
+        width: 335px;
+        height: 384px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .home-location {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .home-location h2 {
+        margin-bottom: 40px;
+        font-size: 68px;
+    }
+    .map {
+        width: 704px;
+        height: 576px;
+    }
+    .list-gap--location {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home-location .list .home-location-address__item:not(:last-child) {
+        margin-bottom: 2px;
+    }
+     .home-location-address__item {
+        font-size: 18px;
+        line-height: 1.33;
+     }
+}
+
+@media screen and (min-width: 1440px) {
+    .home-location {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .home-location > .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-location h2 {
+        margin-left: 672px;
+        margin-bottom: 400px;
+    }
+    .home-location dl {
+        display: flex;
+        gap: 12px;
+    }
+    .home-location .list .home-location-address__item:not(:last-child) {
+        margin-bottom: 4px;
+    }
+    .list-gap--location {
+        gap: 70px;
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-left: 672px;
+    }
+    .home-location-address__item {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+    .home-location p {
+        font-weight: 700;
+    }
+    .map {
+        position: absolute;
+        width: 640px;
+        height: 524px;
+    }
+}
+.home-location-address__list{
+    margin: 0;
+}
