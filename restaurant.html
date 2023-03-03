@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mimino-hotel/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMINO Restaurant</title>
+    
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script type="module" crossorigin src="/mimino-hotel/assets/sliders-98f092d9.js"></script>
+    <link rel="stylesheet" href="/mimino-hotel/assets/sliders-1d77afad.css">
+  </head>
+  <body class="restaurant-header">
+    <header>
+  <div class="container header-container">
+    <a href="./index.html" class="header-logo">
+      <h3 class="header-logo-title">Mimino</h3>
+      <p class="header-logo-text">restaurant-hotel complex</p>
+    </a>
+    <button data-Menu-open type="button" class="header-button">
+      <svg class="header-menu-icon">
+        <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="header-desktop-nav">
+      <ul class="desktop-nav-list list">
+        <li class="desktop-nav-item">
+          <a href="./index.html" class="desktop-nav-link home link">home</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="./hotel.html" class="desktop-nav-link hotel link">hotel</a>
+        </li>
+
+        <li class="desktop-nav-item">
+          <a href="./restaurant.html" class="desktop-nav-link restaurant  link"
+            >restaurant</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header-social list">
+      <li class="header-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="social-link"
+        >
+          <svg class="social-icon" width="24px" height="24px">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-instagram-mobile"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          class="social-link"
+        >
+          <svg class="social-icon" width="24px" height="24px">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-facebook-mobile"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+          target="_blank"
+          class="social-link"
+        >
+          <svg class="social-icon" width="24px" height="24px">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-twitter-mobile"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+ 
+</header>
+
+
+    <main>
+      <section class="restaurant-hero section">
+  <div class="container restaurant-hero-container">
+    <div class="restaurant-hero-title-holder">
+      <h1 class="restaurant-hero-title animate__lightSpeedInLeft animate__animated">restaurant</h1>
+      <div class="restaurant-hero-buttons">
+        <button class="btn btn-light-bg js-open-modal" data-modal="book-table">
+          book a table
+        </button>
+        <a class="btn btn-light-bg" href="#menu">view a menu</a>
+      </div>
+    </div>
+    <div class="restaurant-hero-slider-container">
+      <div class="restaurant-hero-slider">
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
+          <picture>
+            <source
+              srcset="/mimino-hotel/assets/restaurant-desktop-1x-ab163526.jpg 496w, /mimino-hotel/assets/restaurant-desktop-2x-a9c3de56.jpg 992w"
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="/mimino-hotel/assets/restaurant-tablet-1x-92f3da07.jpg 408w, /mimino-hotel/assets/restaurant-tablet-2x-c871f5d8.jpg 816w"
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="/mimino-hotel/assets/restaurant-mobile-1x-e01815c7.jpg 250w, /mimino-hotel/assets/restaurant-mobile-2x-d15ffde5.jpg 500w"
+              sizes="250px"
+              src="/img/restaurant/hero/restaurant3-mobile-1x.jpg"
+              alt="Restaurant"
+            />
+          </picture>
+        </div>
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
+          <picture>
+            <source
+              srcset="/mimino-hotel/assets/dish-desktop-1x-6b029bad.jpg 496w, /mimino-hotel/assets/dish-desktop-2x-93c32bb8.jpg 992w"
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="/mimino-hotel/assets/dish-tablet-1x-0acb0116.jpg 408w, /mimino-hotel/assets/dish-tablet-2x-9050d13f.jpg 816w"
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="/mimino-hotel/assets/dish-mobile-1x-b9efeef2.jpg 250w, /mimino-hotel/assets/dish-mobile-2x-7ad29543.jpg 500w"
+              sizes="250px"
+              src="/mimino-hotel/assets/dish-mobile-1x-b9efeef2.jpg"
+              alt="Dish"
+            />
+          </picture>
+        </div>
+        <div class="restaurant-hero-img restaurant-hero-slider-item">
+          <picture>
+            <source
+              srcset="/mimino-hotel/assets/cooking-desktop-1x-4cb1f650.jpg 496w, /mimino-hotel/assets/cooking-desktop-2x-4da20e91.jpg 992w"
+              media="(min-width: 1440px)"
+              sizes="496px"
+            />
+            <source
+              srcset="/mimino-hotel/assets/cooking-tablet-1x-8c2fbc9c.jpg 408w, /mimino-hotel/assets/cooking-tablet-2x-97c97dc6.jpg 816w"
+              media="(min-width: 768px)"
+              sizes="408px"
+            />
+            <img
+              srcset="/mimino-hotel/assets/cooking-mobile-1x-53028bd0.jpg 250w, /mimino-hotel/assets/cooking-mobile-2x-38675a4f.jpg 500w"
+              sizes="250px"
+              src="/mimino-hotel/assets/cooking-mobile-1x-53028bd0.jpg"
+              alt="Cooking"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="restaurant-hero-slider-arrows">
+        <svg
+          class="restaurant-hero-slider-icon restaurant-hero-prev"
+          width="36"
+          height="36"
+        >
+          <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-button-arrow-left"></use>
+        </svg>
+        <svg
+          class="restaurant-hero-slider-icon restaurant-hero-next"
+          width="36"
+          height="36"
+        >
+          <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-button-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+
+    <p class="restaurant-hero-text">
+      Whether you're in the mood for a hearty breakfast, a light lunch, or a
+      <span class="ital">romantic dinner</span>, our menu has something for
+      everyone.
+    </p>
+  </div>
+</section>
+
+      <section class="restaurant-about-kitchen section">
+  <h2 class="visually-hidden">About a kitchen</h2>
+  <div class="container container-about-kitchen">
+    <ul class="list list-about-kitchen-img">
+      <li class="list-item-about-kitchen-img-1">
+        <picture>
+          <source
+            srcset="/mimino-hotel/assets/chief-mobile-1x-64126a5f.jpg 1x, /mimino-hotel/assets/chief-mobile-2x-29d422fa.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/chief-tablet-1x-371632d2.jpg 1x, /mimino-hotel/assets/chief-tablet-2x-3f58da2c.jpg 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/chief-desktop-1x-fdac4072.jpg 1x, /mimino-hotel/assets/chief-desktop-2x-7ca1ed1b.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <img src="/mimino-hotel/assets/chief-desktop-1x-fdac4072.jpg" alt="chief" />
+        </picture>
+      </li>
+      <li class="list-item-about-kitchen-img-2">
+        <picture>
+          <source
+            srcset="/mimino-hotel/assets/meat-mobile-1x-fff2d872.jpg 1x, /mimino-hotel/assets/meat-mobile-2x-ad7cfcf1.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/meat-tablet-1x-fee2f731.jpg 1x, /mimino-hotel/assets/meat-tablet-2x-60d51b5f.jpg 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/meat-desktop-1x-086f80d4.jpg 1x, /mimino-hotel/assets/meat-desktop-2x-97206027.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <img src="/mimino-hotel/assets/meat-desktop-1x-086f80d4.jpg" alt="meat" />
+        </picture>
+      </li>
+      <li class="list-item-about-kitchen-img-3">
+        <picture>
+          <source
+            srcset="/mimino-hotel/assets/cocktail-mobile-1x-dfd99f5a.jpg 1x, /mimino-hotel/assets/cocktail-mobile-2x-3fdafb09.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/cocktail-tablet-1x-191b1320.jpg 1x, /mimino-hotel/assets/cocktail-tablet-2x-88a56292.jpg 2x"
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="/mimino-hotel/assets/cocktail-desktop-1x-86140803.jpg 1x, /mimino-hotel/assets/cocktail-desktop-2x-5d0ccc39.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="/mimino-hotel/assets/cocktail-desktop-1x-86140803.jpg"
+            alt="cocktail"
+          />
+        </picture>
+      </li>
+    </ul>
+    <ul class="list list-about-kitchen-details">
+      <li class="list-item-about-kitchen-details">
+        <p class="text-about-kitchen-details">
+          At Mimino, we are experts in<span class="ital"> meat preparation</span
+          >. Our chefs use only the finest and freshest ingredients
+          <span class="ital">to create delicious dishes </span>that showcase the
+          flavors of premium cuts of meat.
+        </p>
+      </li>
+      <li class="list-item-about-kitchen-details">
+        <p class="text-about-kitchen-details">
+          Our <span class="ital">slow-cooking process</span>and expert seasoning
+          bring out the best in each dish, making for an unforgettable dining
+          experience. Come taste the magic
+          <span class="ital">of meat preparation at </span>Mimino.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="menu" class="rest-menu-section section ">
+  <div class="rest-menu-container container ">
+    <h2 class="rest-menu-title">RESTAURANT MENU</h2>
+    <div class="rest-menu menu-slider">
+      <!-- HOT MEALS -->
+      <div class="rest-menu-slider slider-item">
+        <h3>HOT MEALS</h3>
+
+        <ul class="rest-menu-list list">
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Veal borscht with beans</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Veal, potatoes, cabbage, carrots, onions, beans, garlic,
+                tomatoes, greens, sour cream
+              </p>
+              <p>240 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Cheese soup with chicken</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Chicken, potatoes, carrots, onions, mushrooms, soft cheese,
+                greens
+              </p>
+              <p>200 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Carbonara pasta</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Tagliatelle pasta, bacon, cream, Parmesan cheese, egg, greens
+              </p>
+              <p>430 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Pork steak</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Pork tenderloin, spices, served with sweet chili sauce and
+                vegetables
+              </p>
+              <p>500 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Gorbusha in white wine sauce</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>Tender redfish, cream sauce based on white wine</p>
+              <p>400 UAH</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Side dishes and snacks -->
+      <div class="rest-menu-slider slider-item vis-hidden">
+        <h3>Side dishes and snacks</h3>
+
+        <ul class="rest-menu-list list">
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Baked vegetables</p>
+                  <p>200 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>Zucchini, pepper, tomato, eggplant</p>
+              <p>230 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>French fries</p>
+                  <p>150 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>Potatoes, tomato sauce</p>
+              <p>160 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Peasant-style potatoes</p>
+                  <p>150 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>Potatoes, spices, spicy sauces</p>
+              <p>160 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Crisp pickles from the barrel</p>
+                  <p>250 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>Salted cucumber, pickled tomato, sauerkraut, Korean carrot</p>
+              <p>350 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Chicken wings in honey sauce</p>
+                  <p>400 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Chicken wings, mustard-honey sauce, served with carrots, celery
+                and blue cheese sauce
+              </p>
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Salads -->
+      <div class="rest-menu-slider slider-item vis-hidden">
+        <h3>Salads</h3>
+
+        <ul class="rest-menu-list list">
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Caesar with chicken</p>
+                  <p>230 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Chicken fillet, lettuce, cherry tomatoes, Parmesan cheese,
+                croutons, Caesar sauce
+              </p>
+              <p>450 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Caesar with shrimp</p>
+                  <p>230 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Tiger shrimp, lettuce, cherry tomatoes, parmesan cheese,
+                croutons, caesar sauce
+              </p>
+              <p>300 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Greek salad</p>
+                  <p>230 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Fresh cucumber, tomato, bell pepper, olives, brynza cheese,
+                lettuce, sauce
+              </p>
+              <p>280 UAH</p>
+            </div>
+          </li>
+
+          <li class="rest-menu-item">
+            <ul class="rest-menu-sublist">
+              <li>
+                <div class="menu-dish-name">
+                  <p>Meat salad</p>
+                  <p>230 g</p>
+                </div>
+              </li>
+            </ul>
+            <div class="menu-dish-ingred">
+              <p>
+                Chicken fillet or pork tenderloin, fresh cucumber, tomato, bell
+                pepper, ranch sauce
+              </p>
+              <p>300 UAH</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desserts and Drinks -->
+      <div class="rest-menu-slider slider-item vis-hidden">
+        <div class="rest-menu-desserts">
+          <h3>Desserts</h3>
+          <ul class="rest-menu-list list">
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Napoleon cake</p>
+                    <p class="drink-price">200 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Poppy cake</p>
+                    <p class="drink-price">300 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Tiramisu</p>
+                    <p class="drink-price">260 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rest-menu-drinks">
+          <h3>Drinks</h3>
+          <ul class="rest-menu-list list">
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Black/green tea</p>
+                    <p class="drink-price">100 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Espresso</p>
+                    <p class="drink-price">100 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="rest-menu-item">
+              <ul class="rest-menu-sublist">
+                <li>
+                  <div class="menu-dish-name">
+                    <p>Cappuccino</p>
+                    <p class="drink-price">100 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="btn-arrows"></div>
+    <button
+      class="rest-btn btn btn-light-bg js-open-modal"
+      data-modal="book-table"
+    >
+      book a table
+    </button>
+  </div>
+</section>
+
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <nav class="footer-desktop-nav">
+      <ul class="footer-desktop-nav-list list">
+        <li class="footer-desktop-nav-item">
+          <a href="./index.html" class="footer-desktop-nav-link link">home</a>
+        </li>
+        <li class="footer-desktop-nav-item">
+          <a href="./hotel.html" class="footer-desktop-nav-link link">hotel</a>
+        </li>
+        <li class="footer-desktop-nav-item">
+          <a href="./restaurant.html" class="footer-desktop-nav-link link"
+            >restaurant</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <a href="./index.html" class="footer-logo desktop-logo">
+      <h3 class="footer-logo-title">Mimino</h3>
+      <p class="footer-logo-text">restaurant-hotel complex</p>
+    </a>
+
+    <ul class="footer-social list">
+      <li class="footer-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-instagram-mobile"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-facebook-mobile"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a
+          href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+          target="_blank"
+          class="footer-social-link"
+        >
+          <svg class="footer-social-icon">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-twitter-mobile"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    <div class="btn-up btn-up_hide"></div>
+    <!--! Щоб додали посилання на це мод.вікно: class="js-open-modal" data-modal="book-room" -->
+<!-- Для роботи з модалками style="visibility: visible; opacity: 1;" -->
+
+<section>
+    <!--! додали атрибут ідентифікації мод.вікна: data-modal="book-room" -->
+    <div class="modal book-room" data-modal="book-room">
+        <!--! додали клас закриття мод.вікна: js-modal-close -->
+        <button class="modal-close-btn js-modal-close" type="button" >
+            <svg class="modal-close-btn-icon">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#modal-cross"></use>
+            </svg>
+        </button>
+
+        <h4 class="call-to-action">BOOK <span class="ital">a room</span></h4>
+        <form action="#">
+            <div class="modal-form-wrapper">
+                <label class="modal-form-field">
+                    <input type="text" id="user_name" name="user_name" class="modal-form-input" pattern="^[a-zA-Zа-яА-Я]+$"
+                        minlength="2" placeholder="Your name *" title="Name should only contain letters" required>
+                    <span class="modal-form-input-desc">who should book a room for?</span>
+                </label>
+                
+                <!-- Варіант 1 input-type="tel" з підстановкою телефону через ДЖС, скрипт в папці js файлі mw-number-reg-->
+                <label class="modal-form-field">
+                    <input id="online_phone" type="tel" name="user_tel" class="modal-form-input" value="+38 ()"
+                        pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+38 (___) ___-__-__"
+                        title="Phone number should be like +38 (0xx) xxx-xx-xx" required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label>
+
+                <!-- Варіант 2 input-type="tel" -->
+                <!-- <label class="modal-form-field">
+                    <input type="tel" name="user_tel" class="modal-form-input"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Phone number should be like xxx-xxx-xx-xx" placeholder="+ 38 ()"
+                        required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label> -->
+                
+                <label class="modal-form-field date">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
+                    <span class="modal-form-input-desc">Check-in date</span>
+                </label>
+                
+                
+                <label class="modal-form-field date-desc">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
+                    <span class="modal-form-input-desc">Check-out date</span>
+                </label>
+                
+                <label class="modal-form-field">
+                    <select id="number-category" class="modal-form-select" >
+                        <option value="hide">Number category</option>
+                        <option value="double-luxury-room">double luxury room</option>
+                        <option value="triple-room">triple room</option>
+                        <option value="four-seater-room">four-seater room</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <button class="btn btn-dark-bg" type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+
+    <!-- Фон під модальним вікном -->
+    <div class="overlay js-overlay-modal"></div>
+</section>
+
+    <!--! Щоб додали посилання на це мод.вікно: class="js-open-modal" data-modal="book-table" -->
+<!-- Для роботи з модалками style="visibility: visible; opacity: 1;" -->
+
+<section>
+    <!--! додали атрибут ідентифікації мод.вікна: data-modal="book-table" -->
+    <div class="modal book-table" data-modal="book-table">
+        <!--! додали клас закриття мод.вікна: js-modal-close -->
+        <button class="modal-close-btn js-modal-close" type="button" >
+            <svg class="modal-close-btn-icon">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#modal-cross"></use>
+            </svg>
+        </button>
+
+        <h4 class="call-to-action">BOOK <span class="ital">A TABLE</span></h4>
+        
+        <form action="#">
+            <div class="modal-form-wrapper">
+                <label class="modal-form-field">
+                    <input type="text" name="user_name" class="modal-form-input" pattern="^[a-zA-Zа-яА-Я]+$" minlength="2"
+                        placeholder="Your name *" title="Name should only contain letters" required>
+                    <span class="modal-form-input-desc">who should book a table for?</span>           
+                </label>
+                
+                
+                <label class="modal-form-field">
+                    <input type="number" name="user_quantity" class="modal-form-input" value="" min="1" max="113" placeholder="number of people *" required>
+                    <span class="modal-form-input-desc">number of people</span>
+                </label>
+                
+                
+                <label class="modal-form-field date">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-02-25" max="2023-12-31" required>
+                    <span class="modal-form-input-desc">what date to book?</span>
+                </label>
+                
+                <label class="modal-form-field">
+                    <input id="online_phone-two" type="tel" name="user_tel" class="modal-form-input" value="+38 ()"
+                        pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+38 (___) ___-__-__" title="Phone number should be like +38 (0xx) xxx-xx-xx" required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label>
+            </div>
+
+            <button class="btn btn-dark-bg" type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+
+    <!-- Фон під модальним вікном -->
+    <div class="overlay js-overlay-modal"></div>
+</section>
+    <!--! Щоб додали посилання на це мод.вікно: class="js-open-modal" data-modal="room-prices" -->
+<!-- Для роботи з модалками style="visibility: visible; opacity: 1;" -->
+
+<section>
+    <!--! додали атрибут ідентифікації мод.вікна: data-modal="room-prices" -->
+    <div class="modal prices-room" data-modal="room-prices">
+        <!--! додали клас закриття мод.вікна: js-modal-close -->
+        <button class="modal-close-btn js-modal-close" type="button" >
+            <svg class="modal-close-btn-icon">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#modal-cross"></use>
+            </svg>
+        </button>
+
+        <h4 class="call-to-action">Prices <span class="ital">per room</span></h4>
+        
+        <form action="#">
+            <p class="room-category">Double suite</p>
+            <div class="modal-form-wrapper">
+                
+                <!--* Варіант 1 - без кнопок -->
+                <!-- <label class="modal-form-field">
+                    <input type="number" name="user_quantity" class="modal-form-input" placeholder="1" min="1" max="365" required>
+                    <span class="modal-form-input-desc">Number of nights</span>
+                </label> -->
+                <!--* Варіант 2 - з кнопками вверх-вниз -->
+                <div class="modal-form-field number-input">
+                    <input id="day-value" type="number" class="modal-form-input" name="night_quantity" min="1" max="365" required>
+                    <button type="button" id="btn-up" class="up"></button>
+                    <button type="button" id="btn-down" class="down"></button>
+                    <span class="modal-form-input-desc">Number of nights</span>
+                </div>
+
+                <div class="modal-form-field">
+                    <input readonly id="price-value" type="number" name="price" class="modal-form-input" placeholder="2 500">
+                    <span class="modal-form-input-desc">UAH</span>
+                </div>
+
+            </div>
+            
+            <!--* Додано клас js-modal-close для закриття мод.вікна як сказано в ТЗ -->
+            <button class="btn btn-dark-bg js-modal-close" type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+    <!-- Фон під модальним вікном -->
+    <div class="overlay js-overlay-modal"></div>
+</section>
+    <div data-Menu class="header-menu is-hidden">
+    <div class="menu-content">
+      <div class="menu-head container">
+        <button data-Menu-close type="button" class="menu-button-close">
+          <svg class="header-menu-icon-close">
+            <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <a class="header-menu-logo">
+          <h3 class="header-menu-logo-title">Mimino</h3>
+          <p class="header-menu-logo-text">restaurant-hotel complex</p>
+        </a>
+        <ul class="menu-social list">
+          <li class="menu-social-item">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="social-link"
+            >
+              <svg class="menu-social-icon" width="24px" height="24px">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-instagram-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              class="social-link"
+            >
+              <svg class="menu-social-icon" width="24px" height="24px">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-facebook-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+              target="_blank"
+              class="social-link"
+            >
+              <svg class="menu-social-icon" width="24px" height="24px">
+                <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-twitter-mobile"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="menu-navigation">
+        <a href="./index.html" class="menu-navigation-title">Home</a>
+        <a href="./hotel.html" class="menu-navigation-title">Hotel</a>
+        <a href="./restaurant.html" class="menu-navigation-title restaurant"
+          >Restaurant</a
+        >
+      </nav>
+    </div>
+    <div>
+      <ul class="menu-social-mobile list">
+        <li class="menu-social-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-instagram-mobile"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-facebook-mobile"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use href="/mimino-hotel/assets/sprite-6ed8d539.svg#icon-twitter-mobile"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+  </body>
+</html>
