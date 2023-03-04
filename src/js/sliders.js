@@ -24,6 +24,7 @@ $('.hotel-hero-slider').slick({
       }
     }
   );
+
   $('.restaurant-hero-slider').slick({
     slide: '.restaurant-hero-slider-item',
     slidesToShow: 1,
@@ -50,28 +51,46 @@ $('.hotel-hero-slider').slick({
       }
     }
   );
-  $('.home-restaurantdetails-slider').slick({
-    dots: false,
+
+var isChanging = false,
+    isFiltered = false;
+$('.home-restaurantdetails-slider').on('init breakpoint', function(event, slick){
+  if (!isChanging) {
+     isChanging = true;
+      if ( slick.activeBreakpoint && slick.activeBreakpoint <= 1440) {
+      if ( ! isFiltered ) {
+        slick.slickFilter(':not(.hide-on-tablet-mobile)');
+        isFiltered = true;
+      }
+    } else {
+      if ( isFiltered ) {
+        slick.slickUnfilter();
+        isFiltered = false;
+      }
+    }
+    isChanging = false;
+  }
+}).slick({
     arrows: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
     variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 300,    
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1441,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          
         },
       },
       {
