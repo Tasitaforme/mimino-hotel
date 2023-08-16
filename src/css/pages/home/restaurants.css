@@ -17,9 +17,6 @@
   line-height: 1;
   margin-bottom: 24px;
 }
-.home-restaurant-details-content-wrapper {
-
-}
 
 .home-restaurant-details-desktop-wrapper{
   margin-bottom: 32px;
@@ -127,140 +124,90 @@
 }
 
 /* -------------- SLIDER --------------- */
-.slick-slider {
+/*? Стилизация Slick слайдера */
+/*? щоб звернутися до слайдеру .slick-slider
+по дефолту у нього position: relative;
+min-width: 0 потрібно ставити якщо він знаходиться ще в дів чи секції*/
+/* .home-restaurantdetails-slider.slick-slider {
+  position: relative;
   min-width: 0;
-}
+  padding: 0;
+  margin: 0;
+  width: 100%;
+} */
 
-.home-restaurantdetails-slider-item {
+/*? Задамо проміжки між слайдами та зробимо картинки адаптивними*/
+.home-restaurantdetails-slider .slick-slide:not(:last-of-type) {
   margin-right: 20px;
+}
+.home-restaurantdetails-slider .slick-slide img {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .home-restaurantdetails-slider-item {
+  .home-restaurantdetails-slider .slick-slide:not(:last-of-type) {
     margin-right: 32px;
   }
 }
 
-.home-restaurantdetails-slider {
-  position: relative;
-}
-
-.home-restaurantdetails-slider-item-desktop {
+/*? Налаштування стрілок */
+/*? Прибираємо дефолтні стрілки в before*/
+.home-restaurantdetails-slider .slick-prev:before,
+.home-restaurantdetails-slider .slick-next:before {
   display: none;
+}
+/*?  щоб зробити стрілки менш прозорі вкінці слайдеру*/
+.home-restaurantdetails-slider .slick-prev.slick-disabled,
+.home-restaurantdetails-slider .slick-next.slick-disabled {
+  opacity: .3;
 }
 
 .home-restaurantdetails-slider .slick-arrow.slick-prev {
-  right: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-    0 0 / 100% no-repeat;
-  top: 100%;
-  left: 28px;
-  margin-top: 18px;
-  transform: translateX(calc(50% - 36px - 10px));
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .home-restaurantdetails-slider .slick-arrow.slick-next {
-  right: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-    0 0 / 100% no-repeat;
-  top: 100%;
-  left: -25px;
-  margin-top: 18px;
-  transform: translateX(calc(50% + 36px + 10px));
-}
+  left: calc(36px + 20px);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E") 0 0 / 100% no-repeat;
+} 
 
-@media screen and (min-width: 768px) {
-  .home-restaurantdetails-slider .slick-arrow.slick-prev {
-    right: 0;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-      0 0 / 100% no-repeat;
-    top: 100%;
-    left: 34px;
-    margin-top: 32px;
-    transform: translateX(calc(50% - 36px - 16px));
-  }
-  .home-restaurantdetails-slider-item-desktop {
-    display: none;
-  }
-}
 
-@media screen and (min-width: 1440px) {
-  .home-restaurantdetails-slider .slick-arrow.slick-prev {
-    right: 0;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.184 22.851c0.347-0.347 0.347-0.91 0-1.257l-5.594-5.594 5.594-5.594c0.347-0.347 0.347-0.91 0-1.257s-0.91-0.347-1.257 0l-6.222 6.222c-0.347 0.347-0.347 0.91 0 1.257l6.222 6.222c0.347 0.347 0.91 0.347 1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-      0 0 / 100% no-repeat;
-    top: 100%;
-    left: 50%;
-    margin-top: 51px;
-    transform: translateX(calc(50% - 36px - 16px));
-  }
-  .home-restaurantdetails-slider-item-desktop {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .home-restaurantdetails-slider .slick-arrow.slick-next {
-    right: 0;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-      0 0 / 100% no-repeat;
-    top: 100%;
-    left: 0px;
-    margin-top: 32px;
-    transform: translateX(calc(50% + 36px + 16px));
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .home-restaurantdetails-slider .slick-arrow.slick-next {
-    right: 0;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.816 22.851c-0.347-0.347-0.347-0.91 0-1.257l5.594-5.594-5.594-5.594c-0.347-0.347-0.347-0.91 0-1.257s0.91-0.347 1.257 0l6.222 6.222c0.347 0.347 0.347 0.91 0 1.257l-6.222 6.222c-0.347 0.347-0.91 0.347-1.257 0z' fill='121212'%3E%3C/path%3E%3C/svg%3E")
-      0 0 / 100% no-repeat;
-    top: 100%;
-    left: 47%;
-    margin-top: 51px;
-    transform: translateX(calc(50% + 36 px + 16px));
-  }
-}
-
+/*?  щоб звернутися до стрілки .slick-arrow*/
 .home-restaurantdetails-slider .slick-arrow {
-  position: absolute;
+  font-size: 0;
+  z-index: 10;
   width: 36px;
   height: 36px;
+  /*?  щоб перемістити вниз слайдеру*/
+  top: 100%;
+  transform: none;
+  /*?  щоб зробити відступ вниз від слайдеру*/
+  margin-top: 18px;
 }
 
-.slick-prev.slick-disabled,
-.slick-next.slick-disabled {
-  opacity: 0.3;
-}
-
-.slider__item-desktop {
-  display: none;
-}
-
+/*?  768 - ...*/
 @media screen and (min-width: 768px) {
-  .slick-prev.slick-disabled,
-  .slick-next.slick-disabled {
-    opacity: 0.3;
-  }
-  .slider__item-desktop {
-    display: none;
+  .home-restaurantdetails-slider .slick-arrow {
+      margin-top: 32px;
+    }
+  .home-restaurantdetails-slider .slick-arrow.slick-next {
+    left: calc(36px + 32px);
   }
 }
-
+/*?  1440 - ...*/
 @media screen and (min-width: 1440px) {
   .home-restaurantdetails-slider .slick-arrow {
-    top: 100%;
+    margin-top: 51px;
   }
-  .slider__item-desktop {
-    margin-right: 32px;
-    display: block;
+  .home-restaurantdetails-slider .slick-arrow.slick-prev {
+    left: calc(50% - 36px/2 - 32px/2);
+  }
+  .home-restaurantdetails-slider .slick-arrow.slick-next {
+    left: calc(50% + 36px/2 + 32px/2);
   }
 }
 
-.slick-prev:before {
-  content: '';
-}
-.slick-next:before {
-  content: '';
-}
