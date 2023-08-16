@@ -20,12 +20,14 @@ local font-face.
 
 **Presentation of the project:** [presentation](https://www.figma.com/proto/rqy3tytPCwddIVpHQDCEdb/Miminosy-project)
 
-## Development team :
+### Development team :
 
 **Team lead:**
+
 **Mykola Vladymyrskiy** made calculating in modal window "prices", button "up",  worked with title animation in section Home-hero.
 
 **Scrum master:**
+
 **Tetiana (Tasita) Kozupytsia**  developed section Home-location and modal windows.
 
 **Front End Developers:**
@@ -39,6 +41,8 @@ local font-face.
 - **Oleksandr Ovsiy** developed section Home-hero and slider for Home-restaurant-details.
 - **Anton Gunin** developed section Restaurant-menu (with mobile/tablet slider).
 
+
+This is a copy of the team project repository, the original repository with all pull requests is [here](https://github.com/Mykokola/teams-project-17).
 ---
 
 **Командний проект.**
@@ -74,7 +78,10 @@ local font-face.
 
 **Презентація проекту:** [presentation](https://www.figma.com/proto/rqy3tytPCwddIVpHQDCEdb/Miminosy-project)
 
-**Презентація командної роботи:** [presentation](https://www.figma.com/proto/sbZABWaFhilllQfIY2iZ7w/Miminosy-team)
+**Презентація команди:** [presentation](https://www.figma.com/proto/sbZABWaFhilllQfIY2iZ7w/Miminosy-team)
+
+Це копія репозиторію командного проекту, оригінал [тут](https://github.com/Mykokola/teams-project-17).
+
 
 ## КОРИСНІ ПОСИЛАННЯ
 
