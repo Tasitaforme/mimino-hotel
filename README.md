@@ -8,7 +8,7 @@
 
 **Description:** multi-page website for a restaurant-hotel complex.
 
-**Target:** website development according to the design layout using the Vite
+**Target:** website development according to [the design layout](https://www.figma.com/file/dug5TYDvNmAKfvw06Sfbby/Mimino-git) using the Vite
 bundler.
 
 **Basic functionality:** adaptive layout, "Mobile First" approach, responsive
@@ -41,6 +41,7 @@ local font-face.
 - **Oleksandr Ovsiy** developed section Home-hero and slider for Home-restaurant-details.
 - **Anton Gunin** developed section Restaurant-menu (with mobile/tablet slider).
 
+**Presentation of the team:** [presentation](https://www.figma.com/proto/sbZABWaFhilllQfIY2iZ7w/Miminosy-team)
 This is a copy of the team project repository, the original repository with all pull requests is [here](https://github.com/Mykokola/teams-project-17).
 
 ---
