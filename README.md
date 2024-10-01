@@ -42,6 +42,7 @@ local font-face.
 - **Anton Gunin** developed section Restaurant-menu (with mobile/tablet slider).
 
 **Presentation of the team:** [presentation](https://www.figma.com/proto/sbZABWaFhilllQfIY2iZ7w/Miminosy-team)
+
 This is a copy of the team project repository, the original repository with all pull requests is [here](https://github.com/Mykokola/teams-project-17).
 
 ---
